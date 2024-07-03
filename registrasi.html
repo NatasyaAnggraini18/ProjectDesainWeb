@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="contack.html">Contack</a></li>
+                <li><a href="registrasi.html">Registrasi Pendaftaran</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1 class="mt-3">Formulir Pendaftaran<br>STMIK KAPUTAMA T.A 2024/2025</h1>
+        <p>Pastikan kembali data yang anda isi sudah benar semua & lengkap sebelum melanjutkan.</p>
+        <div class="alert alert-dark" role="alert">Perhatian! field yang bertanda bintang * berarti wajib diisi.</div>
+    </div>
+    <form>
+        <div class="container">
+            <label>NIK :*</label>
+            <input type="text" name="nik" class="form-control">
+        </div>
+        <div class="container">
+            <label>Nama Lengkap :*</label>
+            <input type="text" name="nama" class="form-control">
+        </div>
+        <div class="container">
+            <label>Tempat / Tanggal Lahir : *</label>
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" name="tempat_lahir" required="" placeholder="Tempat Lahir" class="form-control ">
+                </div>
+                <div class="col-8">
+                    <input type="date" name="tgl_lahir" required="" class="form-control ">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <label>Jenis Kelamin :*</label></br>
+            <div class="form-check-inline">
+                <input type="radio" name="jk" value="Laki-laki" class="form-check-input" id="laki">
+                <label>Laki-Laki</label>
+            </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="jk" value="Perempuan" class="form-check-input" id="perempuan">
+                <label>Perempuan</label>
+            </div>
+        </div>
+        <div class="container">
+            <label>Status :*</label></br>
+            <div class="form-check-inline">
+                <input type="radio" name="status_menikah" value="Menikah" class="form-check-input" id="menikah">
+                <label>Menikah</label>
+            </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="status_menikah" value="Belum Menikah" class="form-check-input" id="belum-menikah">
+            <label>Belum Menikah</label>
+            </div>
+            </form>
+        <div class="container">
+            <label>Agama :*</label></br>
+            <div class="form-check-inline">
+                <input type="radio" name="agama" value="islam" class="form-check-input" id="islam">
+                <label>Islam</label>
+                </div>
+            </div>
+        <div class="container">
+            <input type="radio" name="agama" value="protestan" class="form-check-input" id="protestan">
+            <label>Protestan</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="agama" value="katolik" class="form-check-input" id="katolik">
+            <label>Katolik</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="agama" value="hindu" class="form-check-input" id="hindu">
+            <label>Hindu</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="agama" value="budha" class="form-check-input" id="budha">
+            <label>Budha</label>
+        </div>
+        </div>
+        
+        <div class="container">
+                <label for="alat_transportasi">Alat Transportasi :<br><small style="font-size: 12px !important;"><i></i></small></label>
+                <select name="alat_transportasi" id="alat_transportasi" class="form-select">
+                    <option value="1">Jalan kaki</option>
+                    <option value="2">Angkutan umum</option>
+                    <option value="3">Mobil/bus antar jemput</option>
+                    <option value="4">Kereta api</option>
+                    <option value="5">Gojek</option>
+                    <option value="6">Becak</option>
+                    <option value="7">Perahu penyeberangan/getek</option>
+                    <option value="8">Sepeda</option>
+                    <option value="9">Sepeda motor</option>
+                    <option value="10">Mobil pribadi</option>
+                    <option value="99">Lainnya</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+                <label for="jenis_tinggal">Jenis Tinggal :</label>
+                <select name="jenis_tinggal" id="jenis_tinggal" class="form-select">
+                    <option value="1">Bersama orang tua</option>
+                    <option value="2">Wali</option>
+                    <option value="3">Kost</option>
+                    <option value="4">Asrama</option>
+                    <option value="99">Lainnya</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <label for="kps">Penerima KPS :*</label>
+            <select name="kps" id="kps" class="form-select">
+                <option value="1">Ya</option>
+                <option value="2">Tidak</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <label for="alamat-lengkap">Alamat Lengkap (sesuai ktp) : *</label>
+        <textarea type="text" name="alamat_lengkap" required="" class="form-control " id="nama-lengkap"></textarea>
+    </div>
+    <div class="container">
+        <div class="col-12 mt-4">
+            <div class="form-group">
+                <label for="">RT/RW :<br><small style="font-size: 12px !important;"><i></i></small></label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" name="rt" placeholder="RT" class="form-control" id="">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="rw" placeholder="RW" class="form-control" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <label>Jalan :*</label>
+            <input type="text" name="jalan" class="form-control">
+        </div>
+        <div class="container">
+            <label>Kode Pos :*</label>
+            <input type="text" name="kode pos" class="form-control">
+        </div>
+        <div class="container">
+            <label>Kelurahan/Desa :*</label>
+            <input type="text" name="kel/desa" class="form-control">
+        </div>
+        <div class="container">
+            <label>Dusun :*</label>
+            <input type="text" name="dusun" class="form-control">
+        </div>
+        <div class="container">
+            <label>Kecamatan :*</label>
+            <input type="text" name="kecamatan" class="form-control">
+        </div>
+        <div class="container">
+            <label>NPWP :*</label>
+            <input type="text" name="npwp" class="form-control">
+        </div>
+        <div class="container">
+            <label>Telp/Hp :*</label>
+            <input type="number" name="tlp" required="" class="form-control " id="tlp">
+        </div>
+        <div class="container">
+            <label>Email :*</label>
+        <input type="email" name="email" class="form-control" id="email">
+        </div>
+        <div class="container">
+            <label>Asal Sekolah :*</label>
+            <input type="text" name="asalsekolah" class="form-control">
+        </div>
+        <div class="container">
+            <label>NISN :*</label>
+            <input type="number" name="nisn" required="" class="form-control " id="nisn">
+        </div>
+        <div class="container">
+            <label>Jurusan :*</label>
+            <input type="text" name="jurusan" class="form-control">
+        </div>
+        <div class="container">
+            <label for="alamat">Alamat : *</label>
+            <textarea type="text" name="alamat" required="" class="form-control " id="alamat"></textarea>
+        </div>
+        <div class="container">
+            <label>Program Studi :*</label></br>
+            <div class="form-check-inline">
+                <input type="radio" name="jenjang_pendidikan" value="Teknik Informatika (S1)" class="form-check-input" id="ti">
+                <label>Tenik Informatika</label>
+                </div>
+            </div>
+        <div class="container">
+            <input type="radio" name="jenjang_pendidikan" value="Sistem Informasi (S1)" class="form-check-input" id="si">
+            <label>Sistem Informasi</label>
+        </div>
+        </div>
+        <div class="container">
+            
+            <input type="radio" name="jenjang_pendidikan" value="Komputerisasi Akuntansi" class="form-check-input" id="ka">
+            <label>Komputerisasi Akuntansi</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="jenjang_pendidikan" value="Manajemen Informatika" class="form-check-input" id="mi">
+            <label>Manajemen Informatika</label>
+        </div>
+        </div>
+        <div class="container">
+            <label>Waktu Belajar :*</label></br>
+            <div class="form-check-inline">
+                <input type="radio" name="waktu_belajar" value="Pagi" class="form-check-input" id="pagi">
+                <label>Pagi</label>
+                </div>
+            </div>
+            <div class="container">
+                <input type="radio" name="waktu_belajar" value="Pagi" class="form-check-input" id="pagi">
+                <label>Sore</label>
+            </div>
+            </div>
+            <br>
+            <div class="container">
+            <div class="alert alert-dark" role="alert">Data Orang Tua</div>
+    </div>
+</div>
+<div class="container">
+    <label>Nama Ayah :</label>
+    <input type="text" name="nama_ayah" class="form-control" id="nama-ayah">
+</div>
+<div class="container">
+    <label>NIK :</label>
+    <input type="number" name="nik_ayah" class="form-control" id="nik-ayah">
+</div>
+<div class="container">
+    <label>Tempat / Tanggal Lahir : </label>
+    <div class="row">
+        <div class="col-4">
+            <input type="text" name="tempat_lahir_ayah" required="" placeholder="Tempat Lahir" class="form-control ">
+        </div>
+        <div class="col-8">
+            <input type="date" name="tgl_lahir_ayah" required="" class="form-control ">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <label>Pendidikan Terakhir :</label>
+    <input type="text" name="pendidikan_terakhir_ayah" class="form-control" id="pendidikan_terakhir_ayah">
+</div>
+<div class="container">
+    <label>Pekerjaan :</label>
+    <input type="text" name="pekerjaan" class="form-control" id="pekerjaan">
+</div>
+<div class="container">
+    <label for="Penghasilan-ayah">Penghasilan :</label>
+    <select name="penghasilan_ayah" id="penghasilan-ayah" class="form-select">
+        <option value="Kurang dari Rp. 500.000">Kurang dari Rp. 500.000</option>
+        <option value="Rp. 500.000 - Rp. 999.999">Rp. 500.000 - Rp. 999.999</option>
+        <option value="Rp. 1.000.000 - Rp. 1.999.999">Rp. 1.000.000 - Rp. 1.999.999
+        </option>
+        <option value="Rp. 2.000.000 - Rp. 4.999.999">Rp. 2.000.000 - Rp. 4.999.999
+        </option>
+        <option value="Rp. 5.000.000 - Rp. 20.000.000">Rp. 5.000.000 - Rp. 20.000.000
+        </option>
+    </select>
+</div>
+</div>
+<div class="container">
+    <label for="alamat-lengkap-ayah">Alamat Lengkap Ayah (sesuai ktp) : *</label>
+    <textarea type="text" name="alamat_lengkap_ayah" required="" class="form-control " id="alamat-lengkap-ayah"></textarea>
+</div>
+<div class="container">
+    <div class="col-12 mt-4">
+        <div class="form-group">
+            <label for="">RT/RW :<br><small style="font-size: 12px !important;"><i></i></small></label>
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" name="rt_ayah" placeholder="RT" class="form-control" id="">
+                </div>
+                <div class="col-6">
+                    <input type="text" name="rw_ayah" placeholder="RW" class="form-control" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <label>Kode Pos :</label>
+        <input type="number" name="kode_pos_ayah" class="form-control" id="kode_pos_ayah">
+    </div>
+    <div class="container">
+        <label>Kel/Desa :</label>
+        <input type="text" name="kel/desa_ayah" class="form-control" id="kel/desa-ayah">
+    </div>
+    <div class="container">
+        <label>Kecamatan :</label>
+        <input type="text" name="kecamatan_ayah" class="form-control" id="kecamatan-ayah">
+    </div>
+    <div class="container">
+        <label>Telp/Hp :</label>
+        <input type="number" name="telp/hp_ayah" class="form-control" id="telp/hp_ayah">
+    </div>
+    <div class="container">
+        <label>NPWP :</label>
+        <input type="text" name="npwp_ayah" class="form-control" id="npwp-ayah">
+    </div>
+    <br>
+    <div class="container">
+    <hr>
+    </div>
+    <div class="container">
+        <label>Nama Ibu :</label>
+        <input type="text" name="nama_ibu" class="form-control" id="nama-ibu">
+    </div>
+    <div class="container">
+        <label>NIK :</label>
+        <input type="number" name="nik_ibu" class="form-control" id="nik-ibu">
+    </div>
+    <div class="container">
+        <label>Tempat / Tanggal Lahir : </label>
+        <div class="row">
+            <div class="col-4">
+                <input type="text" name="tempat_lahir_ibu" required="" placeholder="Tempat Lahir" class="form-control ">
+            </div>
+            <div class="col-8">
+                <input type="date" name="tgl_lahir_ibu" required="" class="form-control ">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <label>Pendidikan Terakhir :</label>
+        <input type="text" name="pendidikan_terakhir_ibu" class="form-control" id="pendidikan_terakhir_ibu">
+    </div>
+    <div class="container">
+        <label>Pekerjaan :</label>
+        <input type="text" name="pekerjaan_ibu" class="form-control" id="pekerjaan-ibu">
+    </div>
+    <div class="container">
+        <label for="Penghasilan-ayah">Penghasilan :</label>
+        <select name="penghasilan_ibu" id="penghasilan-ibu" class="form-select">
+            <option value="Kurang dari Rp. 500.000">Kurang dari Rp. 500.000</option>
+            <option value="Rp. 500.000 - Rp. 999.999">Rp. 500.000 - Rp. 999.999</option>
+            <option value="Rp. 1.000.000 - Rp. 1.999.999">Rp. 1.000.000 - Rp. 1.999.999
+            </option>
+            <option value="Rp. 2.000.000 - Rp. 4.999.999">Rp. 2.000.000 - Rp. 4.999.999
+            </option>
+            <option value="Rp. 5.000.000 - Rp. 20.000.000">Rp. 5.000.000 - Rp. 20.000.000
+            </option>
+        </select>
+    </div>
+    </div>
+    <div class="container">
+        <label for="alamat-lengkap-ibu">Alamat Lengkap Ibu (sesuai ktp) : *</label>
+        <textarea type="text" name="alamat_lengkap_ibu" required="" class="form-control " id="alamat-lengkap-ibu"></textarea>
+    </div>
+    <div class="container">
+        <div class="col-12 mt-4">
+            <div class="form-group">
+                <label for="">RT/RW :<br><small style="font-size: 12px !important;"><i></i></small></label>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" name="rt_ibu" placeholder="RT" class="form-control" id="">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="rw_ibu" placeholder="RW" class="form-control" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <label>Kode Pos :</label>
+            <input type="number" name="kode_pos_ibu" class="form-control" id="kode_pos_ibu">
+        </div>
+        <div class="container">
+            <label>Kel/Desa :</label>
+            <input type="text" name="kel/desa_ibu" class="form-control" id="kel/desa-ibu">
+        </div>
+        <div class="container">
+            <label>Kecamatan :</label>
+            <input type="text" name="kecamatan_ibu" class="form-control" id="kecamatan-ibu">
+        </div>
+        <div class="container">
+            <label>Telp/Hp :</label>
+            <input type="number" name="telp/hp_ibu" class="form-control" id="telp/hp_ibu">
+        </div>
+        <div class="container">
+            <label>NPWP :</label>
+            <input type="text" name="npwp_ibu" class="form-control" id="npwp-ibu">
+        </div>
+        <div class="container">
+            <label>Sumber Informasi Mengenai STMIK Kaputama</label>
+            </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="brosur/spanduk/poster" class="form-check-input" id="spanduk">
+            <label>Spanduk</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="brosur/spanduk/poster" class="form-check-input" id="brosur">
+            <label>Brosur</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="brosur/spanduk/poster" class="form-check-input" id="media-massa">
+            <label>Media Massa</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="brosur/spanduk/poster" class="form-check-input" id="teman/saudara">
+            <label>Teman atau Saudara</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="brosur/spanduk/poster" class="form-check-input" id="sosmed">
+            <label>Sosmed</label>
+        </div>
+        </div>
+        <div class="container">
+            <input type="radio" name="info_kampus" value="Lain-lain" class="form-check-input" id="">
+            <input type="text" name="lainnya" class="form-control" placeholder="Lain-lain">
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <input type="checkbox" id="check_benar" name="check_benar" value="data benar" class="form-check-input">
+            <label class="form-check-label" style="font-weight: normal !important;" for="check_benar">Saya telah memastikan data yang saya isi sudah benar.</label>
+        </div>
+        <br>
+        <div class="container">
+        <button type="button" class="btn btn-success">Simpan</button>
+    </div>
+    </form>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
